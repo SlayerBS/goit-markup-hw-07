@@ -18,7 +18,6 @@
 <body>
     <header class="header">
         <div class="container container--header">
-
             <a href="./index.html" class="logo">Web<span class="logo__end">Studio</span></a>
             <nav>
                 <ul class="menu">
@@ -43,7 +42,6 @@
             </address>
         </div>
     </header>
-
     <main>
         <section class="hero">
             <div class="container">
@@ -51,6 +49,55 @@
                 <button data-modal-open class="hero__button">
                     Заказать услугу
                 </button>
+            </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button data-modal-close class="modal__close">
+                        <svg class="cross" width="11px" height="11px">
+                            <use href="./images/sprite.svg#cross">
+                            </use>
+                        </svg>
+                    </button>
+                    <form class="form">
+                        <p>Оставьте свои данные, мы вам перезвоним</p>
+                        <div class="form__field">
+                            <label for="name" class="form__label">Имя</label>
+                            <input type="text" class="form__input" name="user-name" id="name">
+                            <svg class="form__icon" width="12px" height="12px">
+                                <use href="./images/sprite.svg#name">
+                                </use>
+                            </svg>
+                        </div>
+                        <div class="form__field">
+                            <label for="tel" class="form__label">Телефон</label>
+                            <input type="tel" class="form__input" name="tel" id="tel">
+                            <svg class="form__icon" width="13px" height="13px">
+                                <use href="./images/sprite.svg#tel">
+                                </use>
+                            </svg>
+                        </div>
+                        <div class="form__field">
+                            <label for="mail" class="form__label">Почта</label>
+                            <input type="email" class="form__input" name="email" id="mail">
+                            <svg class="form__icon" width="15px" height="12px">
+                                <use href="./images/sprite.svg#email">
+                                </use>
+                            </svg>
+                        </div>
+                        <div class="form__field">
+                            <label for="coment" class="form__label coment">Комментарий</label>
+                            <textarea name="coment" class="form__input" id="coment"
+                                placeholder="Введите текст"></textarea>
+                        </div>
+                        <div class="confirm">
+                            <label class="confirm__label">
+                                <input class="confirm__checkbox" type="checkbox" name="checkbox" value="yes">
+                                <span class="confirm__icon"></span>Соглашаюсь с рассылкой и принимаю&nbsp; <a
+                                    class="confirm__link" href="#"> Условия договора</a></label>
+                        </div>
+                        <button class="confirm__button" type="submit">Отправить</button>
+                    </form>
+                </div>
             </div>
         </section>
         <section class="feature">
@@ -278,8 +325,6 @@
                                 </a>
                             </li>
                         </ul>
-
-
                     </li>
                 </ul>
             </div>
@@ -407,59 +452,6 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button data-modal-close class="modal-close">
-                <svg class="cross" width="11px" height="11px">
-                    <use href="./images/sprite.svg#cross">
-                    </use>
-                </svg>
-            </button>
-            <form class="form order-form">
-                <p>Оставьте свои данные, мы вам перезвоним</p>
-                <div class="form-field">
-                    <label for="name" class="form-label">Имя</label>
-                    <input type="text" class="form-input" name="user-name" id="name">
-                    <svg class="form-svg" width="12px" height="12px">
-                        <use href="./images/sprite.svg#name">
-                        </use>
-                    </svg>
-                </div>
-                <div class="form-field">
-                    <label for="tel" class="form-label">Телефон</label>
-                    <input type="tel" class="form-input" name="tel" id="tel">
-                    <svg class="form-svg" width="13px" height="13px">
-                        <use href="./images/sprite.svg#tel">
-                        </use>
-                    </svg>
-                </div>
-                <div class="form-field">
-                    <label for="mail" class="form-label">Почта</label>
-                    <input type="email" class="form-input" name="email" id="mail">
-                    <svg class="form-svg" width="15px" height="12px">
-                        <use href="./images/sprite.svg#email">
-                        </use>
-                    </svg>
-                </div>
-                <div class="form-field">
-                    <label for="coment" class="form-label coment">Комментарий</label>
-                    <textarea name="coment" class="form-input" id="coment" placeholder="Введите текст"></textarea>
-                </div>
-                <div class="form-agree">
-
-                    <label class="checkbox-label">
-                        <input class="checkbox" type="checkbox" name="checkbox" value="yes">
-                        <span class="checkbox-icon"></span>Соглашаюсь с рассылкой и принимаю&nbsp; <a class="form-link"
-                            href="#"> Условия договора</a></label>
-                </div>
-
-
-                <button type="submit">Отправить</button>
-            </form>
-
-        </div>
-    </div>
     <script src="./js/modal.js"></script>
 </body>
-
 </html>
